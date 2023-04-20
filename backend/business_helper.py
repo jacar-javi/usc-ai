@@ -33,3 +33,6 @@ class BusinessHelper():
         ) 
 
         logging.info(f"Collection {COLLECTION_NAME} is successfully created in QDrant.")
+    def get_response(self, question: str):
+        
+        return qa_chain.run(input_documents="", question=question)
